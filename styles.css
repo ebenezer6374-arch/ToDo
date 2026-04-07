@@ -1,0 +1,130 @@
+ body {
+    margin: 0;
+    font-family: "Open-sans", sans-serif;
+    height: 100vh;
+    background-color: #eee;
+  }
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+  }
+  h1 {
+    text-align: center;
+  }
+  .to-do {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+  }
+   input {
+    width: 50%;}
+
+    #content{
+      font-weight: bold;
+      font-size: 20px;
+    }
+  
+  .addBtn {
+    cursor: pointer;
+    background-color: #eee;
+    padding: 11px 50px;
+    margin-left: -4px;
+    transition: 0.3s;
+  }
+  
+  .addBtn:hover {
+    background-color: #000;
+    color: #fff;
+  }
+  #text {
+    text-align: center;
+   font-size: 30px;
+   font-weight: 900;
+  }
+  
+#myList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+li {
+  display: flex;
+  align-items: flex-start;     
+  gap: 12px;                   
+  padding: 12px 15px;
+  margin: 20px 0;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  cursor: pointer;
+  position: relative;         
+  min-height: 50px;
+  width: 60%;  
+  margin: auto;  
+  position: relative;    
+  margin-top: 20px;  
+  align-items: center;
+  font-weight: bold;
+}
+
+
+li::before {
+  content: "";
+  width: 24px;
+  height: 24px;
+  border: 3px solid #333;
+  border-radius: 6px;
+  flex-shrink: 0;             
+  background-color: white;
+  transition: all 0.3s ease;
+  margin-top: 2px;  
+          
+}
+
+li.checked::before {
+  background-color: #23d5ab;   
+  border-color: #23d5ab;
+  content: "\2713";
+  color: white;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+
+li span.task-text {              
+  flex: 1;                     
+  word-break: break-word;      
+}
+.close {
+  margin-left: auto;           
+  color: #e73c7e;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0 8px;
+  border: 3px solid #333;
+  border-radius: 6px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.close:hover {
+  color: white;
+  background-color: red;
+}
+
+
+ 

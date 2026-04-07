@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-do list app</title>
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <img src="data:image/png;base64,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" width="60px" height="60px" alt="todo" />
+    <h1>My Checklist</h1>
+    <div class="to-do" id="to-do">
+      <input type="text"      id="content" />
+      <button onclick="newElement()" class="addBtn">Add</button>
+    </div>
+    <div id="text"></div>
+    <div id="myList"></div>
+    <script src="index.js"></script>
+  </body>
+</html>
